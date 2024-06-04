@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotação do FII</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Cotação do FII GARE11</h1>
+    </header>
+    <main>
+        <h2>Valor da Cotação</h2>
+        <p class="price">O valor é: <span>{{ price }}</span></p>
+    </main>
+    <footer>
+        <p>Dados obtidos do site <a href="{{ url }}">Status Invest</a></p>
+    </footer>
+</body>
+</html>
